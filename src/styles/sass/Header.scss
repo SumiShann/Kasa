@@ -1,0 +1,25 @@
+@import "./utils/variables";
+
+.header{
+    width: 100%;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        width: auto;
+        height: 2.35rem;
+    }
+    .nav{
+        &-link{
+            font-size: 12px;
+            font-weight: 500;
+            margin-left: 5vw;
+            color: $color-primary;
+        }
+        .active{
+            text-decoration: underline;
+        }
+    }
+}
