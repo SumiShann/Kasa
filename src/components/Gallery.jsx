@@ -1,13 +1,11 @@
 import Card from "./Card"
-import { useFetch } from "../utils/useFetch"
 
-function Gallery(){
-    const {data} = useFetch('./logements.json')
-    const postList = data
+function Gallery({postList}){
+    const postData = postList
     return (
         <section className="gallery">
-            {postList.map(post => 
-                <Card key={post.id} postCover={post.cover} postTitle={post.title}/>
+            {postData.map(post => 
+                <Card key={post.id} postId={post.id} postCover={post.cover} postTitle={post.title}/>
             )}
         </section>
     )
