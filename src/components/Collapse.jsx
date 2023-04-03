@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import down from '../assets/arrow_down.svg'
+import down from '../assets/arrow_down.png'
 import '../styles/css/Collapse.css'
 
 function Collapse({title, content}){

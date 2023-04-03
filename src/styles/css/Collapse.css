@@ -1,9 +1,19 @@
+.collapse {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
 .collapse-heading {
+  height: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 3vw;
   background-color: #FF6060;
   color: white;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
 }
 .collapse-heading h2 {
   font-size: 13px;
@@ -12,6 +22,19 @@
 .collapse-heading .btn {
   background: transparent;
   border: none;
+}
+.collapse-desc {
+  background-color: #F7F7F7;
+  border-radius: 0px 0px 5px 5px;
+  color: #FF6060;
+  position: relative;
+  bottom: 5px;
+}
+.collapse-desc p {
+  margin: 0;
+  padding: 20px 3vw 15px 3vw;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=Collapse.css.map */
