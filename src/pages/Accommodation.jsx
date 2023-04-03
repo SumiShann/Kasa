@@ -9,7 +9,7 @@ function Accommodation(){
     return (
         postData.map(post => params.id === post.id ?
             <main key={post.id}>
-                <Carrousel postPics={post.pictures}/>
+                <Carrousel slider={post.pictures}/>
             </main>
             : null)
     )

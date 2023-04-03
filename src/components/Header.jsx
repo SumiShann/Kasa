@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom"
-import logo from "../logo.svg"
+import logo from "../assets/logo.svg"
 import "../styles/css/Header.css"
 
 function Header(){
@@ -18,11 +18,9 @@ function Header(){
         <header className="header">
             <img src={logo} alt="logo"/>
             <nav className="nav">
-                {navLinks.map((link) => isMobile ? (
-                    <NavLink key={link.route} to={link.route} className="nav-link">{link.content.toUpperCase()}</NavLink>
-                ):(
-                    <NavLink key={link.route} to={link.route} className="nav-link">{link.content}</NavLink>
-                ))}
+                {navLinks.map((link) => 
+                    <NavLink key={link.route} to={link.route} className="nav-link">{isMobile ? link.content.toUpperCase() : link.content}</NavLink>
+                )}
             </nav>
         </header>
     )

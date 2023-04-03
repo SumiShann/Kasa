@@ -6,7 +6,9 @@ function Card({postId, postCover, postTitle}){
     return (
         <Link to={`/accommodation/${postId}`}>
             <div className="card">
-                <img className="card-img" src={postCover} alt={postTitle} crossOrigin="anonymous"/>
+                <div className="img-wrapper">
+                    <img className="card-img" src={postCover} alt={postTitle}/>
+                </div>
                 <h2 className="card-img-title">{postTitle}</h2>
             </div>
         </Link>

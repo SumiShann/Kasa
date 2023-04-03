@@ -1,15 +1,41 @@
 .card {
   width: 100%;
-  height: 340px;
+  height: 255px;
+  border-radius: 10px;
+  position: relative;
+}
+.card .img-wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+.card .img-wrapper::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, 70%, rgba(0, 0, 0, 0.5) 100%);
+  position: absolute;
+  display: block;
+  z-index: 10;
 }
 .card-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background-color: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+  border-radius: inherit;
+  position: relative;
+  z-index: 0;
 }
 .card-img-title {
   color: white;
+  font-size: 18px;
+  font-weight: 500;
+  max-width: 50%;
+  position: absolute;
+  z-index: 50;
+  bottom: 5px;
+  left: 20px;
 }
 
 /*# sourceMappingURL=Card.css.map */

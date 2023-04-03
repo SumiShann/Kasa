@@ -1,3 +1,4 @@
+import "../styles/css/Gallery.css"
 import Card from "./Card"
 
 function Gallery({postList}){

@@ -2,14 +2,40 @@
 
 .card{
     width: 100%;
-    height: 340px;
+    height: 255px;
+    border-radius: $radius-card;
+    position: relative;
+    .img-wrapper{
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        &::before{
+            content: '';
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+            background: $gradient;
+            position: absolute;
+            display: block;
+            z-index: 10;
+        }
+    }
     &-img{
         width: 100%;
         height: 100%;
         object-fit: cover;
-        background-color: $card-gradient;
+        border-radius: inherit;
+        position: relative;
+        z-index: 0;
         &-title{
             color: $color-card-title;
+            font-size: 18px;
+            font-weight: 500;
+            max-width: 50%;
+            position: absolute;
+            z-index: 50;
+            bottom: 5px;
+            left: 20px;
         }
     }
 }
