@@ -9,7 +9,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 0 3vw;
+        padding: 0 1vw 0 3vw;
         background-color: $color-primary;
         color: white;
         border-radius: $radius-collapse;
@@ -30,11 +30,13 @@
         color: $color-primary;
         position: relative;
         bottom: 5px;
-        p{
+        .content{
             margin: 0;
             padding: 20px 3vw 15px 3vw;
             font-size: 12px;
             font-weight: 400;
+            list-style: none;
+            line-height: 1.4;
         }
     }
 }

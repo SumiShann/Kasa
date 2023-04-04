@@ -1,0 +1,18 @@
+.host {
+  display: flex;
+  align-items: center;
+}
+.host-name {
+  width: min-content;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 10px;
+  text-align: end;
+}
+.host-pic {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=Host.css.map */

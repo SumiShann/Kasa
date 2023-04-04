@@ -7,7 +7,6 @@ function Carrousel({slider}){
     const [i, setI] = useState(0)
     const len = slider.length - 1
     const isOneSlide = slider.length === 1
-    console.log(slider)
     const isMobile = window.matchMedia("(max-width: 992px)").matches
     return (
         <div className="carrousel">
