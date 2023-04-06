@@ -1,0 +1,28 @@
+@import './utils/variables';
+
+.notfound{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $color-primary;
+    &-title{
+        font-size: 96px;
+        font-weight: 700;
+        margin: 11px;
+    }
+    &-msg{
+        text-align: center;
+        margin: 0;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    &-link{
+        font-size: 14px;
+        font-weight: 500;
+        color: $color-primary;
+        text-decoration: underline;
+        margin-top: 133px;
+    }
+}

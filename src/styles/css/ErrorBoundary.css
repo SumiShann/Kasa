@@ -1,0 +1,28 @@
+.notfound {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FF6060;
+}
+.notfound-title {
+  font-size: 96px;
+  font-weight: 700;
+  margin: 11px;
+}
+.notfound-msg {
+  text-align: center;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+.notfound-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: #FF6060;
+  text-decoration: underline;
+  margin-top: 133px;
+}
+
+/*# sourceMappingURL=ErrorBoundary.css.map */

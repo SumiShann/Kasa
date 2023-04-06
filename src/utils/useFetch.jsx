@@ -10,7 +10,7 @@ export function useFetch(url) {
                 const data = await response.json()
                 setData(data)
             }
-    fetchData()
+        fetchData()
     }, [url])
     return { data }
 }

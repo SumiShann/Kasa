@@ -1,5 +1,6 @@
 import { useFetch } from "../utils/useFetch"
-import { useParams } from "react-router-dom"
+import { useParams, Navigate } from "react-router-dom"
+import { useEffect, useState } from "react"
 import Carrousel from "../components/Carrousel"
 import Collapse from "../components/Collapse"
 import Tag from "../components/Tag"
@@ -8,11 +9,25 @@ import Host from "../components/Host"
 import '../styles/css/Accommodation.css'
 
 function Accommodation(){
-    const params = useParams()
     const {data} = useFetch('../logements.json')
-    const postData = data
-    return (
-        postData.map(post => params.id === post.id ?
+    const params = useParams()
+    const [post, setPost] = useState(null)
+    useEffect(() => {
+        if (data.length !== 0) {
+            const postInfo = data.find(post => post.id === params.id)
+            setPost(postInfo)
+        } else {
+            setPost(null)
+        }
+    }, [data])
+    if (post === null){
+        return <div>Loading...</div>
+    } else if (post === undefined){
+        return  (
+                    <Navigate to='/*' replace={true} />
+                )
+    } else if (post !== null){
+        return (
             <main key={post.id}>
                 <Carrousel slider={post.pictures}/>
                 <h1 className="title">{post.title}</h1>
@@ -28,8 +43,8 @@ function Accommodation(){
                 <Collapse title={"Description"} content={post.description}/>
                 <Collapse title={"Équipements"} content={post.equipments}/>
             </main>
-            : null)
-    )
-}
+        )
+    }
+}  
 
 export default Accommodation
