@@ -6,15 +6,30 @@
   justify-content: space-between;
   align-items: center;
 }
+@media all and (min-device-width: 768px) {
+  .header {
+    margin-bottom: 20px;
+  }
+}
 .header img {
   width: auto;
   height: 2.35rem;
+}
+@media all and (min-device-width: 768px) {
+  .header img {
+    height: 3.3rem;
+  }
 }
 .header .nav-link {
   font-size: 12px;
   font-weight: 500;
   margin-left: 5vw;
   color: #FF6060;
+}
+@media all and (min-device-width: 768px) {
+  .header .nav-link {
+    font-size: 1.2rem;
+  }
 }
 .header .nav .active {
   text-decoration: underline;

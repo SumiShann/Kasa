@@ -1,25 +1,84 @@
 @import './utils/variables';
+@import './utils/mixins';
 
 main{
     color: $color-primary;
-    .title{
-        font-size: 18px;
-        font-weight: 500;
-        margin-bottom: 5px;
-    }
-    .location{
-        font-size: 14px;
-        font-weight: 500;
-        margin-top: 0;
-    }
-    .tags{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+    .accmmdtn-basics{
+        @include tablet{
+            float: left;
+            max-width: 70%;
+            margin-bottom: 24px;
+        }
+        .title{
+            font-size: 1.125rem;
+            font-weight: 500;
+            margin-bottom: 5px;
+            @include tablet{
+                margin-top: 18px;
+                font-size: 2.25rem;
+            }
+        }
+        .location{
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-top: 0;
+            @include tablet{
+                margin-bottom: 20px;
+                font-size: 1.125rem;
+            }
+        }
+        .tags{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
     }
     .details{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include tablet{
+            flex-direction: column-reverse;
+            align-items: flex-end;
+            margin-top: 10px;
+        }
+    }
+    .accmmdtn-collapse{
+        @include tablet{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 3vw;
+            clear: both;
+        }
+        .collapse{
+            @include tablet{
+                margin-bottom: 0;
+            }
+            &-heading{
+                @include tablet{
+                    border-radius: $radius-accommodation-desktop;
+                    height: 52px;
+                    padding: 0 2% 0 4%;
+                }
+                h2{
+                    @include tablet{
+                        font-size: 1.125rem;
+                    }
+                }
+            }
+            &-desc{
+                @include tablet{
+                    border-radius: $radius-accommodation-desktop;
+                    bottom: 17px;
+                }
+                .content{
+                    @include tablet{
+                        font-size: 1.125rem;
+                        padding: 35px 4% 20px 4%;
+
+                    }
+                }
+            }
+        }
     }
 }

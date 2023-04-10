@@ -2,6 +2,11 @@
   display: flex;
   align-items: center;
 }
+@media all and (min-device-width: 768px) {
+  .host {
+    margin-bottom: 15px;
+  }
+}
 .host-name {
   width: min-content;
   font-size: 12px;
@@ -9,10 +14,23 @@
   margin-right: 10px;
   text-align: end;
 }
+@media all and (min-device-width: 768px) {
+  .host-name {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    margin-right: 15px;
+  }
+}
 .host-pic {
   width: 32px;
   height: 32px;
   border-radius: 50%;
+}
+@media all and (min-device-width: 768px) {
+  .host-pic {
+    width: 64px;
+    height: 64px;
+  }
 }
 
 /*# sourceMappingURL=Host.css.map */

@@ -1,4 +1,5 @@
 @import './utils/variables';
+@import './utils/mixins';
 
 .tag{
     width: 84px;
@@ -13,4 +14,15 @@
     text-align: center;
     border-radius: $radius-collapse;
     margin-right: 10px;
+    p{
+        padding: 1px;
+        margin: 0;
+    }
+    @include tablet{
+        width: 115px;
+        min-height: 25px;
+        max-height: 45px;
+        font-size: 0.875rem;
+        border-radius: $radius-accommodation-desktop;
+    }
 }

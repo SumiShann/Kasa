@@ -1,5 +1,12 @@
 .star {
   margin-right: 5px;
 }
+@media all and (min-device-width: 768px) {
+  .star {
+    margin-left: 15px;
+    margin-right: 0;
+    width: 24.75px;
+  }
+}
 
 /*# sourceMappingURL=Rating.css.map */

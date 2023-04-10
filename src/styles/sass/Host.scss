@@ -1,16 +1,30 @@
+@import './utils/mixins';
+
 .host{
     display: flex;
     align-items: center;
+    @include tablet{
+        margin-bottom: 15px;
+    }
     &-name{
         width: min-content;
         font-size: 12px;
         font-weight: 500;
         margin-right: 10px;
-        text-align: end;     
+        text-align: end;
+        @include tablet{
+            font-size: 1.125rem;
+            line-height: 1.5;
+            margin-right: 15px;
+        }
     }
     &-pic{
         width: 32px;
         height: 32px;
         border-radius: 50%;
+        @include tablet{
+            width: 64px;
+            height: 64px;
+        }
     }
 }

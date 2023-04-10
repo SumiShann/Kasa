@@ -1,3 +1,10 @@
+@import './utils/mixins';
+
 .star{
     margin-right: 5px;
+    @include tablet{
+        margin-left: 15px;
+        margin-right: 0;
+        width: 24.75px;
+    }
 }

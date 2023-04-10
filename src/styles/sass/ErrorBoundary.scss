@@ -1,22 +1,29 @@
 @import './utils/variables';
+@import './utils/mixins';
 
 .notfound{
-    height: 90vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: $color-primary;
     &-title{
-        font-size: 96px;
+        font-size: 6rem;
         font-weight: 700;
         margin: 11px;
+        @include tablet{
+            font-size: 15rem;
+        }
     }
     &-msg{
         text-align: center;
         margin: 0;
         font-size: 18px;
         font-weight: 500;
+        @include tablet{
+            font-size: 2rem;
+        }
     }
     &-link{
         font-size: 14px;
@@ -24,5 +31,8 @@
         color: $color-primary;
         text-decoration: underline;
         margin-top: 133px;
+        @include tablet{
+            font-size: 1.125rem;
+        }
     }
 }

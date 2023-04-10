@@ -1,10 +1,15 @@
 @import "./utils/variables";
+@import "./utils/mixins";
 
 .card{
     width: 100%;
     height: 255px;
     border-radius: $radius-card;
     position: relative;
+    @include desktop{
+        height: auto;
+        aspect-ratio: 1/1;
+    }
     .img-wrapper{
         width: 100%;
         height: 100%;
@@ -29,7 +34,7 @@
         z-index: 0;
         &-title{
             color: $color-card-title;
-            font-size: 18px;
+            font-size: 1.125rem;
             font-weight: 500;
             max-width: 50%;
             position: absolute;

@@ -1,17 +1,36 @@
 main {
   color: #FF6060;
 }
-main .title {
-  font-size: 18px;
+@media all and (min-device-width: 768px) {
+  main .accmmdtn-basics {
+    float: left;
+    max-width: 70%;
+    margin-bottom: 24px;
+  }
+}
+main .accmmdtn-basics .title {
+  font-size: 1.125rem;
   font-weight: 500;
   margin-bottom: 5px;
 }
-main .location {
-  font-size: 14px;
+@media all and (min-device-width: 768px) {
+  main .accmmdtn-basics .title {
+    margin-top: 18px;
+    font-size: 2.25rem;
+  }
+}
+main .accmmdtn-basics .location {
+  font-size: 0.875rem;
   font-weight: 500;
   margin-top: 0;
 }
-main .tags {
+@media all and (min-device-width: 768px) {
+  main .accmmdtn-basics .location {
+    margin-bottom: 20px;
+    font-size: 1.125rem;
+  }
+}
+main .accmmdtn-basics .tags {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -20,6 +39,50 @@ main .details {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media all and (min-device-width: 768px) {
+  main .details {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    margin-top: 10px;
+  }
+}
+@media all and (min-device-width: 768px) {
+  main .accmmdtn-collapse {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3vw;
+    clear: both;
+  }
+}
+@media all and (min-device-width: 768px) {
+  main .accmmdtn-collapse .collapse {
+    margin-bottom: 0;
+  }
+}
+@media all and (min-device-width: 768px) {
+  main .accmmdtn-collapse .collapse-heading {
+    border-radius: 10px;
+    height: 52px;
+    padding: 0 2% 0 4%;
+  }
+}
+@media all and (min-device-width: 768px) {
+  main .accmmdtn-collapse .collapse-heading h2 {
+    font-size: 1.125rem;
+  }
+}
+@media all and (min-device-width: 768px) {
+  main .accmmdtn-collapse .collapse-desc {
+    border-radius: 10px;
+    bottom: 17px;
+  }
+}
+@media all and (min-device-width: 768px) {
+  main .accmmdtn-collapse .collapse-desc .content {
+    font-size: 1.125rem;
+    padding: 35px 4% 20px 4%;
+  }
 }
 
 /*# sourceMappingURL=Accommodation.css.map */

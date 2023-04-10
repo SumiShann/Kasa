@@ -1,4 +1,21 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+
 .gallery{
     display: grid;
     row-gap: 20px;
+    margin: 22px 0;
+    @include tablet{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4vw;
+        margin-top: 40px;
+    }
+    @include desktop{
+        border-radius: 25px;
+        background-color: $color-secondary;
+        padding: 50px;
+        margin: 43px 0;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px 60px;
+    }
 }

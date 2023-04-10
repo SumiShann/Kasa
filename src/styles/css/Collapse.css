@@ -1,5 +1,5 @@
 .collapse {
-  max-width: 100%;
+  width: 100%;
   margin-bottom: 20px;
 }
 .collapse-heading {
@@ -22,6 +22,17 @@
 .collapse-heading .btn {
   background: transparent;
   border: none;
+}
+@media all and (min-device-width: 768px) {
+  .collapse-heading img {
+    width: auto;
+    height: 0.8rem;
+  }
+}
+@media all and (min-device-width: 993px) {
+  .collapse-heading img {
+    height: 1rem;
+  }
 }
 .collapse-desc {
   background-color: #F7F7F7;

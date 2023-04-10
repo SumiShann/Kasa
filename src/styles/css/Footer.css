@@ -16,5 +16,15 @@
   font-size: 12px;
   margin: 30px 0px 0px 0px;
 }
+@media all and (min-device-width: 768px) {
+  .footer-rights {
+    font-size: 1.125rem;
+  }
+}
+@media all and (min-device-width: 993px) {
+  .footer-rights {
+    font-size: 1.4rem;
+  }
+}
 
 /*# sourceMappingURL=Footer.css.map */

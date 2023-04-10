@@ -1,5 +1,5 @@
 .notfound {
-  height: 90vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,9 +7,14 @@
   color: #FF6060;
 }
 .notfound-title {
-  font-size: 96px;
+  font-size: 6rem;
   font-weight: 700;
   margin: 11px;
+}
+@media all and (min-device-width: 768px) {
+  .notfound-title {
+    font-size: 15rem;
+  }
 }
 .notfound-msg {
   text-align: center;
@@ -17,12 +22,22 @@
   font-size: 18px;
   font-weight: 500;
 }
+@media all and (min-device-width: 768px) {
+  .notfound-msg {
+    font-size: 2rem;
+  }
+}
 .notfound-link {
   font-size: 14px;
   font-weight: 500;
   color: #FF6060;
   text-decoration: underline;
   margin-top: 133px;
+}
+@media all and (min-device-width: 768px) {
+  .notfound-link {
+    font-size: 1.125rem;
+  }
 }
 
 /*# sourceMappingURL=ErrorBoundary.css.map */

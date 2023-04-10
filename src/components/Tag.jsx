@@ -2,7 +2,9 @@ import '../styles/css/Tag.css'
 
 function Tag({tag}){
     return (
-        <div className='tag'>{tag}</div>
+        <div className='tag'>
+            <p>{tag}</p>
+        </div>
     )
 }
 

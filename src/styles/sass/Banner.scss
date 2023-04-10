@@ -1,11 +1,21 @@
 @import './utils/variables';
+@import './utils/mixins';
 
 .banner{
     width: 100%;
     height: 111px;
     border-radius: $radius-card;
-    margin-bottom: 22px;
     position: relative;
+    @include tablet{
+        height: 223px;
+        display: flex;
+        flex-direction: column;
+        border-radius: $radius-bigimg-desktop;
+        margin-top: 30px;
+    }
+    @include desktop{
+        margin-top: 50px;
+    }
     &-img{
         width: 100%;
         height: 100%;
@@ -20,5 +30,11 @@
         position: absolute;
         top: 10px;
         left: 20px;
+        @include desktop{
+            font-size: 2.7rem;
+            top: 55px;
+            left: initial;
+            align-self: center;
+        }
     }
 }
