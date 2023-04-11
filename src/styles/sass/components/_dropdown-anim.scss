@@ -1,0 +1,7 @@
+.collapse-desc{
+    transform: translateY(-200px);
+    transition: transform 400ms ease-out;
+    &.shown{
+        transform: translateY(0px);
+    }
+}

@@ -1,7 +1,10 @@
 @import './utils/variables';
 @import "./utils/mixins";
+@import './components/dropdown-anim';
+@import './components/btncollapse-anim';
 
 .collapse{
+    overflow: hidden;
     width: 100%;
     margin-bottom: 20px;
     &-heading{
