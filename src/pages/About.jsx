@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import Banner from "../components/Banner"
 import Collapse from "../components/Collapse"
 import aboutData from "../data/aboutData"
@@ -5,6 +6,11 @@ import "../styles/css/About.css"
 
 function About(){
     const data = aboutData
+
+    useEffect(() => {
+        document.title = "Kasa-A propos"
+    }, [])
+    
     return (
         <main>
             <Banner origin="about" />

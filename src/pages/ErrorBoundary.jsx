@@ -1,8 +1,14 @@
+import { useEffect } from "react"
 import { Link } from "react-router-dom"
 import "../styles/css/ErrorBoundary.css"
 
 function ErrorBoundary(){
     const isMobile = window.matchMedia("(max-width: 992px)").matches
+
+    useEffect(() => {
+        document.title = "Kasa-Error"
+    }, [])
+
     return (
         <div className="notfound">
             <h1 className="notfound-title">404</h1>
