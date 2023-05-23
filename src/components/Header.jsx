@@ -11,7 +11,9 @@ function Header(){
             <img src={logo} alt="logo"/>
             <nav className="nav">
                 {links.map((link) => 
-                    <NavLink key={link.route} to={link.route} className="nav-link">{isMobile ? link.content.toUpperCase() : link.content}</NavLink>
+                    <NavLink key={link.id} to={link.route} className="nav-link">
+                        {isMobile ? link.content.toUpperCase() : link.content}
+                    </NavLink>
                 )}
             </nav>
         </header>
